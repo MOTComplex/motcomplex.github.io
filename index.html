@@ -5,7 +5,7 @@
     <link rel="icon" type="image/x-icon" href="favicon16x16.ico" />
     <link rel="icon" type="image/x-icon" href="favicon32x32.ico" />
     <link rel="icon" type="image/x-icon" href="favicon128x128.ico" />
-    <title>ECCV 2022 MOTComplex Workshop | Multiple Object Tracking in Complex Environments Workshop in ECCV 2022. Call for challenge participation!</title>
+    <title>ECCV 2022 MOTComplex Workshop | Multiple Object Tracking and Segmentation in Complex Environments Workshop in ECCV 2022. Call for challenge participation!</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -71,7 +71,7 @@
             <div class="row align-items-center">
                 <div class="col-12 col-lg-8 d-flex">
                     <a href="index.html" class="site-logo">
-                        Multiple Object Tracking in Complex Environments Workshop
+                        Multiple Object Tracking and Segmentation in Complex Environments Workshop
                     </a>
                     <a href="#"
                        class="ml-auto d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black"><span
@@ -124,7 +124,7 @@
     <div class="container">
         <div class="row align-items-center justify-content-center">
             <div class="col-md-10 text-center" data-aos="fade-up">
-                <h3> Multiple Object Tracking in Complex Environments Workshop</h3>
+                <h3> Multiple Object Tracking and Segmentation in Complex Environments Workshop</h3>
                 <h5> Three challenges in long video, occluded object and diverse motion </h5> 
                 <h3> August 00<sup>th</sup>, 0:00 am PST, ECCV 2022</h3>
             </div>
@@ -143,10 +143,10 @@
                 <div class="trend-entry d-flex">
                     <div class="trend-contents">
                         <h5>Abstract</h5>
-                            <p>Multiple object tracking aims to localize and associate objects of interest along time, and serves as fundamental technologies in many practical applications, such as visual surveillance, public security, video analysis, and human-computer interaction. </p>
-                            <p>Computer vision systems nowadays have achieved great performance in simple scenes of multiple object tracking, such as MOT dataset and DAVIS dataset. However, they are not as robust as the human vision system, especially in complex environments.
+                            <p>Multiple object tracking and segmentation aims to localize and associate objects of interest along time, and serves as fundamental technologies in many practical applications, such as visual surveillance, public security, video analysis, and human-computer interaction. </p>
+                            <p>Computer vision systems nowadays have achieved great performance in simple scenes, such as <a href="https://motchallenge.net/">MOT dataset</a> and <a href="https://davischallenge.org/">DAVIS dataset</a>, but are not as robust as the human vision system, especially in complex environments.
 </p>
-                            <p>To advance current vision systems performance in complex environments, our workshop explores three settings: (a) long video (b) occluded object (c) diverse motion.</p>
+                            <p>To advance current vision systems performance in complex environments, our workshop explores three settings of multiple object tracking and segmentation: (a) long video (b) occluded object (c) diverse motion.</p>
                         
                         <h5>Three challenges consists of:</h5>
                             <ul>
@@ -164,34 +164,196 @@
                 </div>
             </div>
 
-            
+
+
+            <div class="col-lg-12" id="challenge" style="padding-top:80px;margin-top:-80px;">
+                <div class="section-title">
+                    <h2>Challeng</h2>
+                </div>
+                <div class="trend-entry d-flex">
+                    <div class="trend-contents">
+                        <h5>VIS: Long Video track</h5>
+<!--                             OVIS is a new large scale benchmark dataset for video instance segmentation task.
+                            It is designed with the philosophy of perceiving object occlusions in videos, which could reveal the complexity and the diversity of real-world scenes. OVIS consists of:
+                            <ul>
+                              <li>296k high-quality instance masks</li>
+                              <li>25 commonly seen semantic categories</li>
+                              <li>901 videos with severe object occlusions</li>
+                              <li>5,223 unique instances</li>
+                            </ul>
+
+                            <p>
+                                We use average precision (AP) at different intersection-over-union (IoU) thresholds and average recall (AR) as our evaluation metrics, following Youtube-VIS. The IoU in video instance segmentation is the sum of intersection area over the sum of union area across the video. For more details about the dataset, please refer to our <a href="https://arxiv.org/abs/2102.01558">paper</a> or <a href="http://songbai.site/ovis/">website</a>.
+                            </p> -->
+
+                            <a href="">Dataset Download</a><br>
+                            <a href="">Evaluation Server</a><br>
+
+                    </div>
+                </div>
+                
+                <div class="trend-entry d-flex">
+                    <div class="trend-contents">
+                        <h5>OVIS </h5>
+                            OVIS is a new large scale benchmark dataset for video instance segmentation task. It is designed with the philosophy of perceiving object occlusions in videos, which could reveal the complexity and the diversity of real-world scenes. OVIS consists of:
+                            <ul>
+                              <li>296k high-quality instance masks</li>
+                              <li>25 commonly seen semantic categories</li>
+                              <li>901 videos with severe object occlusions</li>
+                              <li>5,223 unique instances</li>
+                            </ul>
+
+                            <p>
+                                We use average precision (AP) at different intersection-over-union (IoU) thresholds and average recall (AR) as our evaluation metrics, following Youtube-VIS. The IoU in video instance segmentation is the sum of intersection area over the sum of union area across the video. For more details about the dataset, please refer to our <a href="https://arxiv.org/abs/2102.01558">paper</a> or <a href="http://songbai.site/ovis/">website</a>.
+                            </p>
+
+                            <a href="">Dataset Download</a><br>
+                            <a href="">Evaluation Server</a><br>
+
+                    </div>
+                </div>
+                
+                <div class="trend-entry d-flex">
+                    <div class="trend-contents">
+                        <h5>DanceTrack</h5>
+                            DanceTrack is a multi-human tracking dataset with two emphasized properties, (1) uniform appearance: humans are in highly similar and almost undistinguished appearance, (2) diverse motion: humans are in complicated motion pattern and their relative positions exchange frequently. DanceTrack consists of:
+                            <ul>
+                              <li>100 videos of group dance, 40 training videos, 25 validation videos and 35 test videos</li>
+                              <li>990 unique instances with average length of 52.9 s</li>
+                              <li>877k high-quality bounding boxes</li>
+                            </ul>
+
+                            <p>
+                                We use Higher Order Tracking Accuracy (HOTA) as the main metric, AssA and IDF1 to measure association performance,  DetA and MOTA for detection quality. For more details about the dataset, please refer to our <a href="https://arxiv.org/abs/2111.14690">paper</a> or <a href="https://dancetrack.github.io/">website</a>.
+                            </p>
+
+                            <a href="">Dataset Download</a><br>
+                            <a href="">Evaluation Server</a><br>
+
+                    </div>
+                </div>                
+                <h5>Competition Schedule</h5>
+                <div class="trend-entry d-flex">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th scope="col"> Competition</th>
+                            <th scope="col"> Date</th>
+                        </tr>
+                        </thead>
+                        <tbody> 
+                        <tr>
+                            <td>Competition Phase 1 (open the submission of the val results)</td>
+                            <td>June 00, 2022 (11:59PM Pacific Time)</td>
+                        </tr> 
+                        <tr>
+                            <td>Competition Phase 2 (open the submission of the test results)</td>
+                            <td>July 00, 2022 (11:59PM Pacific Time)</td>
+                        </tr> 
+                        <tr>
+                            <td>Deadline for Submitting the Final Predictions</td>
+                            <td>August 00, 2022 (11:59PM Pacific Time)</td>
+                        </tr>
+                        <tr>
+                            <td>Decisions to Participants</td>
+                            <td>August 00+5, 2022 (11:59PM Pacific Time)</td>
+                        </tr>
+                      <!--   <tr>
+                            <td>Poster</td>
+                            <td>10:00-11:00, June 16, 2021</td>
+                        </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                
+<!--                 <h5>Top Teams</h5>
+                <div class="trend-entry d-flex">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th scope="col"> Rank</th>
+                            <th scope="col"> Team Name</th>
+                            <th scope="col"> Team Members</th>
+                            <th scope="col"> Organization</th>
+                            <th scope="col"> Technical Report</th>
+                        </tr>
+                        </thead>
+                        <tbody> 
+                        <tr>
+                            <td>1st</td>
+                            <td>A</td>
+                            <td>A1, A2, A3</td>
+                            <td>A Group</td>
+                            <td><a href="">PDF</a></td>
+                        </tr> 
+                        <tr>
+                            <td>2nd</td>
+                            <td>B</td>
+                            <td>B1, B2, B3</td>
+                            <td>B Group</td>
+                            <td><a href="">PDF</a></td>
+                        </tr> 
+                        <tr>
+                            <td>3rd</td>
+                            <td>C</td>
+                            <td>C1, C2, C3</td>
+                            <td>C Group</td>
+                            <td><a href="">PDF</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div> -->
+            </div>
+
+
             <div class="col-lg-12" id="workshop" style="padding-top:80px;margin-top:-80px;">
                 <div class="section-title">
                     <h2>Workshop</h2>
                 </div>
-                <!-- <h5>Invited Speakers</h5>
+                <h5>Invited Speakers</h5>
                 <div class="row justify-content-md-center">
                     <div class="col-md-2.5">
                         <div class="card">
-                            <img src="images/alan_cropped.jpg" width="100%"/>
+                            <img src="images/xingyizhou.jpeg" width="100%"/>
                             <div class="post-meta">
-                                <span class="d-block"><a href="https://www.cs.jhu.edu/~ayuille/index.html">Alan Yuille</a> </span>
-                                <span class="date-read">John Hopkins University</span>
+                                <span class="d-block"><a href="https://www.cs.utexas.edu/~zhouxy/">Xingyi Zhou</a> </span>
+                                <span class="date-read">The University of Texas at Austin</span>
                                 <span class="date-read"><br>&nbsp;</span>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-2.5">
                         <div class="card">
-                            <img src="images/hanwang_cropped.png" width="100%"/>
+                            <img src="images/fisheryu.png" width="100%"/>
                             <div class="post-meta">
-                                <span class="d-block"><a href="https://personal.ntu.edu.sg/hanwangzhang/">Hanwang Zhang</a> </span>
-                                <span class="date-read">Nanyang Technological University</span>
+                                <span class="d-block"><a href="https://www.yf.io/">Fisher Yu</a> </span>
+                                <span class="date-read">ETH Zürich</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2.5">
+                        <div class="card">
+                            <img src="images/huchuanlu.jpg" width="100%"/>
+                            <div class="post-meta">
+                                <span class="d-block"><a href="http://ice.dlut.edu.cn/lu/index.html">Huchuan Lu</a> </span>
+                                <span class="date-read">Dalian University of Technology</span>
+                                <span class="date-read"><br>&nbsp;</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2.5">
+                        <div class="card">
+                            <img src="images/Laura.jpeg" width="100%"/>
+                            <div class="post-meta">
+                                <span class="d-block"><a href="https://dvl.in.tum.de/team/lealtaixe/">Laura Leal-Taixé</a> </span>
+                                <span class="date-read">The Technical University of Munich</span>
+                                <span class="date-read"><br>&nbsp;</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <p><br></p> -->
+
                 <h5>Workshop Schedule</h5>
                 <p><b>August 00<sup>th</sup>, 0:00 - 4:00 am (PST)</b></p>
                 <div class="trend-entry d-flex">
@@ -258,150 +420,8 @@
                 </table>
                 </div>
             </div>
-
-
-            <div class="col-lg-12" id="challenge" style="padding-top:80px;margin-top:-80px;">
-                <div class="section-title">
-                    <h2>Challeng</h2>
-                </div>
-                <div class="trend-entry d-flex">
-                    <div class="trend-contents">
-                        <h5>VIS: Long Video track</h5>
-<!--                             OVIS is a new large scale benchmark dataset for video instance segmentation task.
-                            It is designed with the philosophy of perceiving object occlusions in videos, which could reveal the complexity and the diversity of real-world scenes. OVIS consists of:
-                            <ul>
-                              <li>296k high-quality instance masks</li>
-                              <li>25 commonly seen semantic categories</li>
-                              <li>901 videos with severe object occlusions</li>
-                              <li>5,223 unique instances</li>
-                            </ul>
-
-                            <p>
-                                We use average precision (AP) at different intersection-over-union (IoU) thresholds and average recall (AR) as our evaluation metrics, following Youtube-VIS. The IoU in video instance segmentation is the sum of intersection area over the sum of union area across the video. For more details about the dataset, please refer to our <a href="https://arxiv.org/abs/2102.01558">paper</a> or <a href="http://songbai.site/ovis/">website</a>.
-                            </p> -->
-
-                            <a href="">Dataset Download</a><br>
-                            <a href="">Evaluation Server</a><br>
-
-                    </div>
-                </div>
-                
-                <div class="trend-entry d-flex">
-                    <div class="trend-contents">
-                        <h5>OVIS </h5>
-                            OVIS is a new large scale benchmark dataset for video instance segmentation task.
-                            It is designed with the philosophy of perceiving object occlusions in videos, which could reveal the complexity and the diversity of real-world scenes. OVIS consists of:
-                            <ul>
-                              <li>296k high-quality instance masks</li>
-                              <li>25 commonly seen semantic categories</li>
-                              <li>901 videos with severe object occlusions</li>
-                              <li>5,223 unique instances</li>
-                            </ul>
-
-                            <p>
-                                We use average precision (AP) at different intersection-over-union (IoU) thresholds and average recall (AR) as our evaluation metrics, following Youtube-VIS. The IoU in video instance segmentation is the sum of intersection area over the sum of union area across the video. For more details about the dataset, please refer to our <a href="https://arxiv.org/abs/2102.01558">paper</a> or <a href="http://songbai.site/ovis/">website</a>.
-                            </p>
-
-                            <a href="">Dataset Download</a><br>
-                            <a href="">Evaluation Server</a><br>
-
-                    </div>
-                </div>
-                
-                <div class="trend-entry d-flex">
-                    <div class="trend-contents">
-                        <h5>DanceTrack</h5>
-<!--                             OVIS is a new large scale benchmark dataset for video instance segmentation task.
-                            It is designed with the philosophy of perceiving object occlusions in videos, which could reveal the complexity and the diversity of real-world scenes. OVIS consists of:
-                            <ul>
-                              <li>296k high-quality instance masks</li>
-                              <li>25 commonly seen semantic categories</li>
-                              <li>901 videos with severe object occlusions</li>
-                              <li>5,223 unique instances</li>
-                            </ul>
-
-                            <p>
-                                We use average precision (AP) at different intersection-over-union (IoU) thresholds and average recall (AR) as our evaluation metrics, following Youtube-VIS. The IoU in video instance segmentation is the sum of intersection area over the sum of union area across the video. For more details about the dataset, please refer to our <a href="https://arxiv.org/abs/2102.01558">paper</a> or <a href="http://songbai.site/ovis/">website</a>.
-                            </p> -->
-
-                            <a href="">Dataset Download</a><br>
-                            <a href="">Evaluation Server</a><br>
-
-                    </div>
-                </div>                
-                <h5>Competition Schedule</h5>
-                <div class="trend-entry d-flex">
-                    <table class="table table-striped">
-                        <thead>
-                        <tr>
-                            <th scope="col"> Competition</th>
-                            <th scope="col"> Date</th>
-                        </tr>
-                        </thead>
-                        <tbody> 
-                        <tr>
-                            <td>Competition Phase 1 (open the submission of the val results)</td>
-                            <td>June 00, 2022 (11:59PM Pacific Time)</td>
-                        </tr> 
-                        <tr>
-                            <td>Competition Phase 2 (open the submission of the test results)</td>
-                            <td>July 00, 2022 (11:59PM Pacific Time)</td>
-                        </tr> 
-                        <tr>
-                            <td>Deadline for Submitting the Final Predictions</td>
-                            <td>August 00, 2022 (11:59PM Pacific Time)</td>
-                        </tr>
-                        <tr>
-                            <td>Decisions to Participants</td>
-                            <td>August 00+5, 2022 (11:59PM Pacific Time)</td>
-                        </tr>
-                      <!--   <tr>
-                            <td>Poster</td>
-                            <td>10:00-11:00, June 16, 2021</td>
-                        </tr> -->
-                        </tbody>
-                    </table>
-                </div>
-                <h5>Top Teams</h5>
-                <div class="trend-entry d-flex">
-                    <table class="table table-striped">
-                        <thead>
-                        <tr>
-                            <th scope="col"> Rank</th>
-                            <th scope="col"> Team Name</th>
-                            <th scope="col"> Team Members</th>
-                            <th scope="col"> Organization</th>
-                            <th scope="col"> Technical Report</th>
-                        </tr>
-                        </thead>
-                        <tbody> 
-                        <tr>
-                            <td>1st</td>
-                            <td>A</td>
-                            <td>A1, A2, A3</td>
-                            <td>A Group</td>
-                            <td><a href="">PDF</a></td>
-                        </tr> 
-                        <tr>
-                            <td>2nd</td>
-                            <td>B</td>
-                            <td>B1, B2, B3</td>
-                            <td>B Group</td>
-                            <td><a href="">PDF</a></td>
-                        </tr> 
-                        <tr>
-                            <td>3rd</td>
-                            <td>C</td>
-                            <td>C1, C2, C3</td>
-                            <td>C Group</td>
-                            <td><a href="">PDF</a></td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-
+            
+            
             <div class="col-lg-12" id="people" style="padding-top:80px;margin-top:-80px;">
                 <div class="section-title">
                     <h2>Organizers</h2>
